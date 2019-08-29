@@ -1,0 +1,60 @@
+//<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+// STEP 1
+//<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+<Card>
+  <CardHead>
+    <Brand src="https://pf4.patternfly.org/assets/images/pf-logo-small.svg" alt="Patternfly Logo" />
+    <CardActions>
+    <Button variant="plain">
+    <TimesIcon />
+    </Button>
+    </CardActions>
+  </CardHead>
+  <CardHeader>
+    <Text component={TextVariants.p}>
+      PatternFly
+    </Text>
+    <TextContent>
+      <Text component={TextVariants.small}>
+        Provided by Red Hat
+      </Text>
+    </TextContent>
+  </CardHeader>
+  <CardBody>
+    PatternFly is an open source design system created to enable consistency and usability across a wide range of applications and use cases. PatternFly provides clear standards, guidance, and tools that help designers and developers work together more efficiently and build better user experiences.
+  </CardBody>
+  <CardFooter>
+    <Button variant="link" isInline>Link to PatternFly</Button>
+  </CardFooter>
+</Card>
+
+//<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+// STEP 2
+//<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+<Card isHoverable>
+
+//<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+// STEP 3
+//<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+<CardFooter>
+  <Button variant="primary">Link to PatternFly</Button>
+</CardFooter>
+
+//<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+// STEP 4
+//<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+<CardFooter>
+  <Button variant="primary">Link to PatternFly</Button>
+</CardFooter>
+
+//<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+// STEP 5
+//<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>
+:root {
+  --my-app-card-theme--Color: #DC143C;
+}
+
+.pf-c-page.myPageClass {
+  --pf-global--link--Color: var(--my-app-card-theme--Color);
+  --pf-c-page--BackgroundColor: purple;
+}
